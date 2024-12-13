@@ -1,1 +1,19 @@
 /*  your css code here. If applicable */
+/* Container for the gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if there is not enough space */
+    justify-content: space-around; /* Space out items evenly */
+    gap: 10px; /* Adds space between the items */
+    margin: 20px;
+}
+
+/* Styling for each image */
+.gallery img {
+    max-width: 25vw; /* Set the max-width to 25% of the viewport width */
+    margin: 10px; /* Margin around each image */
+    border: 3px solid #000; /* 3px solid black border around the images */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+    border-radius: 5px; /* Optional: gives a rounded corner effect */
+    object-fit: cover; /* Ensures images are cropped to fit the container without distortion */
+}
